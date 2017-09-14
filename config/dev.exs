@@ -33,7 +33,6 @@ config :hello_elixir, HelloElixirWeb.Endpoint,
 config :hello_elixir, HelloElixirWeb.Endpoint,
   live_reload: [
     patterns: [
-      ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/hello_elixir_web/views/.*(ex)$},
       ~r{lib/hello_elixir_web/templates/.*(eex)$}
@@ -49,9 +48,9 @@ config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
 config :hello_elixir, HelloElixir.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "hello_elixir_dev",
+  adapter: Ecto.Adapters.MySQL,
+  username: "root",
+  password: "root",
+  database: "hello_elixir",
   hostname: "localhost",
   pool_size: 10

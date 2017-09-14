@@ -32,9 +32,9 @@ defmodule HelloElixirWeb.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(HelloElixirWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(WebWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(HelloElixirWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(WebWeb.Gettext, "errors", msg, opts)
     end
   end
 end
