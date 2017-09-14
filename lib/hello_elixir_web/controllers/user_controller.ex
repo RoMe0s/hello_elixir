@@ -40,5 +40,3 @@ defmodule HelloElixirWeb.UserController do
     end
   end
 end
-
-Reviewed-by: RoMe0s <RoMe0s@yandex.ru>
